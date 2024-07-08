@@ -1,6 +1,6 @@
 {
   "name": "react-redux-saga-finite-state-machine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A seamless integration library that bridges the redux-saga-finite-state-machine with React, providing an effortless setup for managing React component states through Redux-Saga state machines.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

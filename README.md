@@ -74,5 +74,11 @@ yarn add redux-saga-finite-state-machine react-redux-saga-finite-state-machine
     };
 ```
 
+## Contributing
 
+Contributions are welcome!
+
+## License
+
+React-Redux-Saga-Finite-State-Machine is MIT licensed. See the [LICENSE](LICENSE) file for more details.
 

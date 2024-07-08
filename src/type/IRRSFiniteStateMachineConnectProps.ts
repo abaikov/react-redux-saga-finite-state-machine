@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IRRSFiniteStateMachineContextValue } from './IRRSFiniteStateMachineContextValue';
 import { RSFiniteStateMachine } from 'redux-saga-finite-state-machine';
 
-export interface IRRSFiniteStateMachineContextConsumerProps<
+export interface IRRSFiniteStateMachineConnectProps<
     ComponentProps = {}, 
     RunProps = {}, 
     ERSFiniteStateMachineState extends string | number | symbol = string,

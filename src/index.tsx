@@ -5,7 +5,7 @@ import { IRRSFiniteStateMachineContextValue } from './type/IRRSFiniteStateMachin
 
 export { RRSFiniteStateMachineContext } from './RRSFiniteStateMachineContext';
 export { RRSFiniteStateMachineContextProvider } from './RRSFiniteStateMachineContextProvider';
-export { RRSFiniteStateMachineContextConsumer } from './RRSFiniteStateMachineContextConsumer';
+export { RRSFiniteStateMachineConnect } from './RRSFiniteStateMachineConnect';
 
 export const useStateMachine = (props: IRRSFiniteStateMachineHookProps, checkProps: any[]) => {
     const contextValue: IRRSFiniteStateMachineContextValue =

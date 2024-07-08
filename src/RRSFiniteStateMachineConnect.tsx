@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { RRSFiniteStateMachineContext } from './RRSFiniteStateMachineContext';
-import { IRRSFiniteStateMachineContextConsumerProps } from './type/IRRSFiniteStateMachineContextConsumerProps';
+import { IRRSFiniteStateMachineConnectProps } from './type/IRRSFiniteStateMachineConnectProps';
 import { IRRSFiniteStateMachineContextValue } from './type/IRRSFiniteStateMachineContextValue';
 
-export const RRSFiniteStateMachineContextConsumer = <Props extends {}={}>({
+export const RRSFiniteStateMachineConnect = <Props extends {}={}>({
     stateMachine,
     mapComponentPropsToMachineProps,
     context = RRSFiniteStateMachineContext
-}: IRRSFiniteStateMachineContextConsumerProps) => {
+}: IRRSFiniteStateMachineConnectProps) => {
     return (Component: React.ComponentType<Props>) => {
         return ((props: Props) => {
             const contextValue: IRRSFiniteStateMachineContextValue = React.useContext(context);
@@ -21,9 +21,9 @@ export const RRSFiniteStateMachineContextConsumer = <Props extends {}={}>({
                     runProps
                 );
                 return stop;
-            }, [runProps])
+            }, [runProps]);
 
-            return <Component {...props}/>
+            return React.useMemo(() => <Component {...props} />, [props]);
         });
     }
 }

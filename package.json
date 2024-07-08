@@ -1,0 +1,51 @@
+{
+  "name": "react-redux-saga-finite-state-machine",
+  "version": "1.0.0",
+  "description": "A seamless integration library that bridges the redux-saga-finite-state-machine with React, providing an effortless setup for managing React component states through Redux-Saga state machines.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "src/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaikov/react-redux-saga-finite-state-machine.git"
+  },
+  "keywords": [
+    "redux",
+    "saga",
+    "finite",
+    "state",
+    "machine",
+    "redux-state-machine",
+    "react-redux-state-machine",
+    "redux-saga-finite-state-machine",
+    "state-machine",
+    "react-state-machine",
+    "react-redux-saga-finite-state-machine",
+    "redux-saga-state-machine",
+    "finite-state-machine",
+    "redux-saga",
+    "react-redux",
+    "rtk",
+    "redux-toolkit"
+  ],
+  "author": "Andrei Baikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abaikov/react-redux-saga-finite-state-machine/issues"
+  },
+  "homepage": "https://github.com/abaikov/react-redux-saga-finite-state-machine#readme",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "redux-saga-finite-state-machine": "^1.0.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
